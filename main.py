@@ -17,7 +17,7 @@ target_height = 80
 target_x = random.randint(0, SCREEN_WIDTH - target_width)
 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
 
-color = (#122581)
+color = (18, 37, 129)  # #122581 RGB
 
 running = True
 
@@ -33,6 +33,5 @@ while running:
                 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
     screen.blit(target_img, (target_x, target_y))
     pygame.display.update()
-
 
 pygame.quit()
