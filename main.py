@@ -10,7 +10,7 @@ pygame.display.set_caption('Игра ТИР')
 icon = pygame.image.load('img/тир_icon.jpg')
 pygame.display.set_icon(icon)
 
-target_img = pygame.image.load('img/')
+target_img = pygame.image.load('img/apple_target.jpg')
 target_width = 80
 target_height = 80
 
@@ -20,6 +20,7 @@ target_y = random.randint(0, SCREEN_HEIGHT - target_height)
 color = (#122581)
 
 running = True
+
 while running:
     screen.fill(color)
     for event in pygame.event.get():
